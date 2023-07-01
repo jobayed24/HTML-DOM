@@ -1,8 +1,9 @@
-const elements=document.getElementsByTagName("p");
-
-document.getElementById("demo").innerHTML="this is the first Pharagrap <br>"+elements[1].innerHTML;
+const storeP=document.getElementsByClassName("intro");
 
 
 
+document.getElementById("demo").innerHTML=storeP[1].innerHTML;
 
-console.log(elements);
+
+
+
