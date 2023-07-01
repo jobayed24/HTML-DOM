@@ -1,9 +1,4 @@
-const storeP=document.getElementsByClassName("intro");
+const  qselector=document.querySelectorAll("p.intro");
 
 
-
-document.getElementById("demo").innerHTML=storeP[1].innerHTML;
-
-
-
-
+document.getElementById("demo").innerHTML=qselector[1].innerHTML;
