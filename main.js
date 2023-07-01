@@ -1,4 +1,17 @@
-const  qselector=document.querySelectorAll("p.intro");
+const fValues=document.forms["frm1"];
 
 
-document.getElementById("demo").innerHTML=qselector[1].innerHTML;
+
+let x = fValues.length;
+
+let text="";
+
+for(let i=0; i<x; i++){
+    text+=fValues.elements[i].value+"<br/ ><br />";
+}
+document.getElementById("demo").innerHTML=text;   
+
+
+console.log(text);
+
+
