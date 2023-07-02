@@ -1,14 +1,7 @@
-const getAnchors= document.getElementsByTagName("a");
+function getTageName(){
+    const newValue=document.activeElement.tagName;
 
-let x=getAnchors.length;
+    document.getElementById("demo").innerHTML=newValue;
 
-let text="";
-
-for(let i=0; i<x; i++){
-    text+=getAnchors[i].innerHTML+"<br >";
+    console.log(newValue);
 }
-
-
-document.getElementById("demo").innerHTML=text;
-
-console.log(getAnchors);
