@@ -1,7 +1,11 @@
-function getTageName(){
-    const newValue=document.activeElement.tagName;
+const newEvent=document.addEventListener("click",printHello);
 
-    document.getElementById("demo").innerHTML=newValue;
 
-    console.log(newValue);
+
+
+function printHello(){
+    document.getElementById("demo").innerHTML="I love you baby";
 }
+
+
+console.log(document);
