@@ -1,13 +1,4 @@
-const firstValue=document.addEventListener("mousemove",randFunction);
-
-function randFunction(){
-    document.getElementById("demo").innerHTML=Math.random();
-}
+const newValue=document.baseURI;
 
 
-function removeEle(){
-    document.removeEventListener("mousemove",randFunction);
-}
-
-const newConValue=document.getElementById("demo").innerHTML;
-
+document.getElementById("demo").innerHTML=newValue;
