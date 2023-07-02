@@ -1,11 +1,16 @@
-const newEvent=document.addEventListener("click",printHello);
+document.addEventListener("mouseover",firstEvent);
+document.addEventListener("mouseout",secondEvent);
+document.addEventListener("click",thirdEvent);
 
 
-
-
-function printHello(){
-    document.getElementById("demo").innerHTML="I love you baby";
+function firstEvent(){
+    document.getElementById("demo").innerHTML="Mouse Over";
 }
 
+function secondEvent(){
+    document.getElementById("demo").innerHTML="Mouse Out";
+}
 
-console.log(document);
+function thirdEvent(){
+    document.getElementById("demo").innerHTML="Clicked !";
+}
