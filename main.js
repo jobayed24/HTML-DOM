@@ -1,10 +1,5 @@
-function myFunction(){
- //create attrubutes
-    const att=document.createAttribute("class");
+const addatt=document.createAttribute("style");
 
-    att.value="demoClass";
+    addatt.value="color:red";
 
-    let ld=document.getElementsByTagName('h1')[0].setAttributeNode(att);
-   
-
-}
+    document.getElementsByTagName('h1')[0].setAttributeNode(addatt);
