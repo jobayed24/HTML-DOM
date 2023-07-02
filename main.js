@@ -1,5 +1,5 @@
- document.addEventListener("click",myFunction);
+const newValue=document.characterSet;
 
- function myFunction(){
-    document.body.innerHTML="<h1> I hacked you browser</h1>";
- }
+document.getElementById("demo").innerHTML=newValue;
+
+console.log(newValue);
