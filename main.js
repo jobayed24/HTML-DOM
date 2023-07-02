@@ -1,4 +1,5 @@
-const newValue=document.baseURI;
+ document.addEventListener("click",myFunction);
 
-
-document.getElementById("demo").innerHTML=newValue;
+ function myFunction(){
+    document.body.innerHTML="<h1> I hacked you browser</h1>";
+ }
