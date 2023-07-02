@@ -1,7 +1,12 @@
 function myFunction(){
-    document.open();
-    document.write("<h1>This is jobayed</h1>");
-    document.write("<p>this is another documents</p>");
-    document.close();
+    const newWindow=window.open();
+
+    newWindow.document.open();
+    newWindow.document.write("<h2>Hey, Hello</h2>");
+    newWindow.document.write("<p>This is jobayed <p>");
+    newWindow.document.close();
+ 
+   
+
    
 }
