@@ -1,8 +1,14 @@
-const mydoc=document;
+const getAnchors= document.getElementsByTagName("a");
 
-const myAnchors=mydoc.anchors.length;
+let x=getAnchors.length;
 
-// anchors are deprecated
+let text="";
+
+for(let i=0; i<x; i++){
+    text+=getAnchors[i].innerHTML+"<br >";
+}
 
 
-document.getElementById("demo").innerHTML=myAnchors;
+document.getElementById("demo").innerHTML=text;
+
+console.log(getAnchors);
