@@ -1,16 +1,13 @@
-document.addEventListener("mouseover",firstEvent);
-document.addEventListener("mouseout",secondEvent);
-document.addEventListener("click",thirdEvent);
+const newEvent=document.addEventListener("click",function(){
+    myFunction(p1,p2);
+});
 
+let p1, p2;
+p1=5;
+p2=6;
 
-function firstEvent(){
-    document.getElementById("demo").innerHTML="Mouse Over";
-}
+function myFunction(a,b){
+    result=a*b;
 
-function secondEvent(){
-    document.getElementById("demo").innerHTML="Mouse Out";
-}
-
-function thirdEvent(){
-    document.getElementById("demo").innerHTML="Clicked !";
+    document.getElementById("demo").innerHTML=result;
 }
