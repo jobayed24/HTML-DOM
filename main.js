@@ -1,5 +1,14 @@
-const addatt=document.createAttribute("style");
+const fruits=['apple','pineapple','orange','coconut','cucomber'];
 
-    addatt.value="color:red";
 
-    document.getElementsByTagName('h1')[0].setAttributeNode(addatt);
+const dfg=document.createDocumentFragment();
+console.log(dfg);
+for( let x in fruits){
+    const li=document.createElement("li");
+    li.textContent=fruits[x];
+    dfg.appendChild(li);    
+}
+
+
+console.log(dfg);
+document.getElementById("myList").appendChild(dfg);
