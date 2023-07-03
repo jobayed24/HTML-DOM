@@ -1,14 +1,8 @@
-const para=document.createElement("button");
-para.innerText="Hello Button";
-document.getElementById("myDIV").appendChild(para);
+const newAccess=document.getElementById("w3s");
 
-const newbutton=document.createAttribute("onclick");
-function hmm(){
-    document.getElementById("myDIV").innerHTML="This is explore new things ";
-}
-newbutton.value="hmm()";
+console.log(newAccess);
 
+newAccess.accessKey="w";
 
-document.getElementsByTagName("button")[0].setAttributeNode(newbutton);
+console.log(newAccess.accessKey);
 
-console.log(newbutton);
