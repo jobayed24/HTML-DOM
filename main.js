@@ -1,5 +1,5 @@
-const newElement=document.createElement("p");
+const para=document.createElement('p');
 
-newElement.innerText="This is jobayed haha";
+para.innerText="This is a Pharagrahp";
 
-document.body.appendChild(newElement);
+document.getElementById("myDIV").appendChild(para);
