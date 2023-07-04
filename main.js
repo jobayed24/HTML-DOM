@@ -1,15 +1,9 @@
 
+
+
+
 function appendData(){
+    const getIdMylist2=document.getElementById("myList2").firstElementChild;
 
-    const getUlList=document.getElementById("myClass");
-
-    const createLiElement=document.createElement("li");
-    
-    const textNode=document.createTextNode("Another Coffe");
-    
-    createLiElement.appendChild(textNode);
-
-    getUlList.appendChild(createLiElement);
-    
+    document.getElementById("myList1").appendChild(getIdMylist2);
 }
-
