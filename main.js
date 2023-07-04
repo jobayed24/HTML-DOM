@@ -1,8 +1,12 @@
-const newAccess=document.getElementById("w3s");
+const myAccessKey=document.getElementById("w3s");
 
-console.log(newAccess);
+const store=document.createAttribute("accesskey");
 
-newAccess.accessKey="w";
+store.value="w";
 
-console.log(newAccess.accessKey);
+const newValue=myAccessKey.setAttributeNode(store);
 
+const retrivedAccessKey=document.getElementById("demo").innerHTML=myAccessKey.accessKey;
+
+
+console.log(retrivedAccessKey);
