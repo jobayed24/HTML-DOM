@@ -1,12 +1,15 @@
-const myAccessKey=document.getElementById("w3s");
 
-const store=document.createAttribute("accesskey");
+function appendData(){
 
-store.value="w";
+    const getUlList=document.getElementById("myClass");
 
-const newValue=myAccessKey.setAttributeNode(store);
+    const createLiElement=document.createElement("li");
+    
+    const textNode=document.createTextNode("Another Coffe");
+    
+    createLiElement.appendChild(textNode);
 
-const retrivedAccessKey=document.getElementById("demo").innerHTML=myAccessKey.accessKey;
+    getUlList.appendChild(createLiElement);
+    
+}
 
-
-console.log(retrivedAccessKey);
