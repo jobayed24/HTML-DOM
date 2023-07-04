@@ -1,9 +1,5 @@
+const getImgID=document.getElementById("myImg");
 
+const getImgIDLength=getImgID.attributes.length;
 
-
-
-function appendData(){
-    const getIdMylist2=document.getElementById("myList2").firstElementChild;
-
-    document.getElementById("myList1").appendChild(getIdMylist2);
-}
+document.getElementById("demo").innerHTML=getImgIDLength;
