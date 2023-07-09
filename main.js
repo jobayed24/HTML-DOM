@@ -1,4 +1,12 @@
-const lwcountchild=document.getElementById("myDIV").childElementCount;
+function myFunction(){
+    const getClassList=document.getElementById("myDIV");
 
-document.getElementById("demo").innerHTML=lwcountchild;
 
+getClassList.classList.add("addcolor");
+}
+
+function removeFunction(){
+    const removeCss=document.getElementById("myDIV");
+
+    removeCss.classList.remove("addcolor");
+}
