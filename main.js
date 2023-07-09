@@ -1,12 +1,11 @@
 function myFunction(){
-    const getClassList=document.getElementById("myDIV");
+ const getColor=document.getElementById("myDIV");
+console.log(getColor.className)
+ if(getColor.className=="addcolor"){
+    getColor.className="newcolor";
+ }else{
+    getColor.className="addcolor";
+ }
 
-
-getClassList.classList.add("addcolor");
-}
-
-function removeFunction(){
-    const removeCss=document.getElementById("myDIV");
-
-    removeCss.classList.remove("addcolor");
+ console.log(getColor.classList)
 }
