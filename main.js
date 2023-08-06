@@ -1,11 +1,13 @@
-function myFunction(){
- const getColor=document.getElementById("myDIV");
-console.log(getColor.className)
- if(getColor.className=="addcolor"){
-    getColor.className="newcolor";
- }else{
-    getColor.className="addcolor";
- }
+/// without variable there are problem to store data 
 
- console.log(getColor.classList)
+const buttonB=document.querySelector("#_button")
+
+const printValue=document.querySelector("#demo")
+
+
+
+buttonB.onclick =() =>{
+    alert(`Hello ${prompt("What is your name ?")} , nice to meet you`);
+
+    printValue.textContent=`Hello ${prompt("What is your name")}`
 }
