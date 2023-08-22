@@ -1,13 +1,10 @@
-/// without variable there are problem to store data 
+document.getElementById("fname").addEventListener("blur",myFunction);
 
-const buttonB=document.querySelector("#_button")
-
-const printValue=document.querySelector("#demo")
-
-
-
-buttonB.onclick =() =>{
-    alert(`Hello ${prompt("What is your name ?")} , nice to meet you`);
-
-    printValue.textContent=`Hello ${prompt("What is your name")}`
+function myFunction(){
+  let inputValue=document.getElementById("fname");
+  if(inputValue.value==""){
+    window.alert("Write your name");
+  }else{
+    inputValue.value=inputValue.value.toUpperCase();
+  }
 }
