@@ -1,10 +1,6 @@
 
-window.onbeforeprint=function(){myBeforePrint()}
-window.onafterprint=function(){myAfterPrint()}
-function myBeforePrint(){
-  alert("Are you sure to Printing");
-}
-function myAfterPrint(){
-  alert("Thank you for Printing");
-}
+window.onbeforeunload=function(){ return myBeforeUnload()}
 
+function myBeforeUnload(){
+  return("your data may be not save");
+}
