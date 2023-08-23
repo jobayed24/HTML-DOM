@@ -4,5 +4,9 @@ let getSelectValue=document.getElementById("mySelect");
 getSelectValue.addEventListener("change",selectDataChange);
 
 function selectDataChange(){
-  document.getElementById("demo").innerHTML="You are selected "+getSelectValue.value;
+  let submitButton=document.getElementById("optionSubmit");
+  submitButton.addEventListener("click",showData);
+  function showData(){
+    document.getElementById("demo").innerHTML=getSelectValue.value;
+  }
 }
