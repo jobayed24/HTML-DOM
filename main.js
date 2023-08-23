@@ -1,12 +1,6 @@
-let getSelectValue=document.getElementById("mySelect");
+// disable context menu
 
 
-getSelectValue.addEventListener("change",selectDataChange);
+let getContextMenu=document.getElementById("myDiv");
 
-function selectDataChange(){
-  let submitButton=document.getElementById("optionSubmit");
-  submitButton.addEventListener("click",showData);
-  function showData(){
-    document.getElementById("demo").innerHTML=getSelectValue.value;
-  }
-}
+getContextMenu.addEventListener("contextmenu",e=>{e.preventDefault()});
