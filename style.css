@@ -1,38 +1,15 @@
-div.relative{
-    border: 3px solid red;
-    height: 300px;
-    width: 50%;
-    position: relative;
-}
-div.absolute button{
-    border: 3px solid green;
-    border-radius: 50px;
-    padding: 5px;
-    position:absolute;
-    right:20px;
-    bottom: 20px;
-}
-div.absolute button:hover{
-    background-color: rgba(128, 128, 128, 0.322);
-    border: 2px solid lightgreen;
-    cursor: pointer;
+div {
+  width: 50%;
+  height: 100px;
+  position: relative;
+  background-color: yellow;
 }
 
-/*Move div from top to 200px bottom*/
-
-div.newDiv{
-    width: 200px;
-    height: 200px;
-    background-color: rgb(12, 240, 24);
-    animation: myMove 5s infinite;
-    position:relative;
-}
-
-@keyframes myMove{
-    0% {left:0;top:0; background-color: rgb(255, 238, 0);}
-    25% {top:0; left:100px; background-color: aqua;}
-    50% {top:100px; left: 100px; background-color: darkblue; }
-    75% {top: 100px; left: 0; background-color: purple;}
-    100% {top:0; left: 0; background-color: red;}
-
+@keyframes mymove {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 300px;
+  }
 }
