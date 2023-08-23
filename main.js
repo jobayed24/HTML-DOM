@@ -1,6 +1,8 @@
-// disable context menu
+let getCopyText=document.getElementById("myDiv");
+console.log("🚀 ~ file: main.js:2 ~ getCopyText:", getCopyText)
 
 
-let getContextMenu=document.getElementById("myDiv");
+getCopyText.addEventListener("copy",function(){
+  document.getElementById("demo").innerHTML="Your are hacked ";
+})
 
-getContextMenu.addEventListener("contextmenu",e=>{e.preventDefault()});
