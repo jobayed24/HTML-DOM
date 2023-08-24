@@ -1,22 +1,11 @@
-let getTextValue=document.getElementById("myDiv");
+let getBodyElement=document.getElementsByTagName("body")[0];
 
+getBodyElement.addEventListener('click',getTagName);
 
-getTextValue.addEventListener('focusin',myFocusIn);
+function getTagName(){
+  let getInput=document.activeElement.tagName;
+  document.getElementById("demo").innerHTML=getInput;
 
-function myFocusIn(){
-  getTextValue.value="";
-  getTextValue.addEventListener('change',function(){
-    document.getElementById("demo").innerHTML=getTextValue.value.toUpperCase();
-  })
-  getTextValue.addEventListener('focusout',function(){
-    let newElement=document.createElement("div");
-    newElement.setAttribute("id",'jk');
-    
-    newElement.style.backgroundColor="red";
-    newElement.style.height="300px";
-    newElement.style.width="300px";
-    newElement.innerHTML="jk";
-    console.log(newElement);
-
-  })
 }
+
+// console.log(getBodyElement);
