@@ -1,8 +1,12 @@
+
 let getButton=document.getElementById("getButton");
 
 getButton.addEventListener('click',function(){
- let myDocument= window.open();
- myDocument.document.write("<h1>This is new Documents</h1>");
- myDocument.document.write("<p>This is new Pharagraph</p>");
- myDocument.document.close();
+    let x;
+    if(confirm("Are you sure?")){
+        x="You are deleted";
+    }else{
+        x="You canceled";
+    }
+    document.getElementById("demo").innerHTML=x;
 })
