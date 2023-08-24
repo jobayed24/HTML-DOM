@@ -1,12 +1,8 @@
-let bodyConetnet=document.getElementsByTagName("h1")[0];
-let newUppercase=bodyConetnet.innerHTML.toUpperCase();
+let getButton=document.getElementById("getButton");
 
-bodyConetnet.style.backgroundColor="red";
-bodyConetnet.addEventListener('mouseover',removerBackground);
-function removerBackground(){
-  bodyConetnet.style.backgroundColor="transparent";
-  bodyConetnet.style.cursor="pointer";
-}
-
-
-console.log(newUppercase);
+getButton.addEventListener('click',function(){
+  document.open();
+document.write("<h1>Hey Jobayed hossen. What's up? ");
+document.write("<p>This is second line of documents where data i have write down</p>")
+document.close();
+})
