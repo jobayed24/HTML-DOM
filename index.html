@@ -4,12 +4,20 @@
 
   <body>
     <!-- This is a comment node! -->
-    <button
-      id="getButton"
-      onclick="checkCookie(prompt('Check your Cookie Name','name'))"
-    >
-      Login
-    </button>
-    <script src="main.js"></script>
+    <button>Say HI</button>
+    <button onclick="cancelMytimeOut()">cancel hi</button>
+    <div id="demo"></div>
+    <script>
+      setInterval(myTime, 1000);
+      function myTime() {
+        let d = new Date();
+        let dtime = d.toLocaleTimeString();
+        let getElement = document.getElementById("demo");
+        getElement.innerHTML = dtime;
+        getElement.style.fontSize = "70px";
+        getElement.style.textAlign = "center";
+        getElement.style.marginTop = "250px";
+      }
+    </script>
   </body>
 </html>
