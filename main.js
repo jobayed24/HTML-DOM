@@ -1,0 +1,3 @@
+function cancelMytimeOut(){
+    clearInterval(mysetInterval)
+}

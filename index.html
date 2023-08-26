@@ -5,10 +5,11 @@
   <body>
     <!-- This is a comment node! -->
     <button>Say HI</button>
-    <button onclick="cancelMytimeOut()">cancel hi</button>
+    <button onclick="cancelMytimeOut()">Stop Watch</button>
     <div id="demo"></div>
+    <script src="main.js"></script>
     <script>
-      setInterval(myTime, 1000);
+      let mysetInterval = setInterval(myTime, 1000);
       function myTime() {
         let d = new Date();
         let dtime = d.toLocaleTimeString();
