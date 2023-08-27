@@ -4,21 +4,13 @@
 
   <body>
     <!-- This is a comment node! -->
-    <button>Say HI</button>
-    <button onclick="cancelMytimeOut()">Stop Watch</button>
-    <div id="demo"></div>
+    <button onclick="makeAnimate()" id="demo">click here</button>
+    <h1>JavaScirpt</h1>
+    <div id="container">
+      <div id="animate">Jk</div>
+      <div id="righAnimate">Tushar</div>
+    </div>
+
     <script src="main.js"></script>
-    <script>
-      let mysetInterval = setInterval(myTime, 1000);
-      function myTime() {
-        let d = new Date();
-        let dtime = d.toLocaleTimeString();
-        let getElement = document.getElementById("demo");
-        getElement.innerHTML = dtime;
-        getElement.style.fontSize = "70px";
-        getElement.style.textAlign = "center";
-        getElement.style.marginTop = "250px";
-      }
-    </script>
   </body>
 </html>
