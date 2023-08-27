@@ -1,37 +1,27 @@
-function makeAnimate(){
-  const getAnimate=document.getElementById('animate');
-  const getRightAnimate=document.getElementById("righAnimate");
-  let righID=null;
-  let rightPos=0;
+let myWindow;
 
-  clearInterval(righID);
+function dcOpen(){
+ myWindow=window.open('','','width=100,height=100;')
+}
 
-  rightID=setInterval(righAnimate,5);
-  function righAnimate(){
-    if(rightPos==450){
-      clearInterval(righID)
-    }else{
-      
-      rightPos++;
-      getRightAnimate.style.top=rightPos+"px";
-      getRightAnimate.style.right=rightPos+"px"
-    }
+function dcClose(){
+  if(myWindow){
+    myWindow.close();
   }
+}
 
-
-
-  let id=null;
-  let pos=0;
-  clearInterval(id);
-  id=setInterval(myMove,5);
-  function myMove(){
-    if(pos==450){
-      clearInterval(id)
+function checkWindow(){
+  let x='';
+  if(!myWindow){
+    x="not opened yet";
+  }else{
+    if(myWindow.closed){
+      x="It has closed";
     }else{
-      pos++;
-      getAnimate.style.top=pos+"px";
-      getAnimate.style.left=pos+"px";
+      x="It already open"
     }
+    
   }
-
+  document.getElementById('demo').innerHTML=x;
+  
 }
